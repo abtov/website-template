@@ -52,20 +52,20 @@ a {
 }
 
 .big-circle {
-    height: 150rem;
-    width: 150rem;
+    height: 200rem;
+    width: 200rem;
     background-color: rgba(10, 10, 10, 0.9);
     border-radius: 50%;
     position: absolute;
     z-index: -1;
-    left: -102rem;
-    top: -50rem;
+    left: -150rem;
+    top: -75rem;
 }
 
     /* Tree */
 
 .link-tree {
-    height: 80px;
+    height: 100px;
     width: 100%;
     padding-top: 22px;
 
@@ -76,7 +76,6 @@ a {
     display: flex;
     position: absolute;
     justify-content: space-between;
-    align-items: center;
 }
 
 .left-branch {
@@ -86,11 +85,28 @@ a {
 }
 
 .logo {
-    width: 152px;
-    height: 100px;
+    width: 142px;
+    height: 95px;
     content: url("images/Mixen-final.png");
-    padding-top: 22px;
+    padding-top: 5px;
 }
+
+.all-links {
+    display: flex;
+    align-items: center;
+    margin-left: 65px;
+    align-self: center;
+    border-left: 1px white solid;
+    padding-left: 60px;
+    height: 40px;
+}
+
+.links {
+    font-weight: light;
+    font-size: 18px;
+    margin: 24px;
+}
+
 
 .right-branch {
     padding-right: 52px;
@@ -102,26 +118,54 @@ a {
     background: rgba(20, 20, 20, 0.4);
     border: 2px white solid;
     color: white;
-    width: 100px;
+    width: fit-content;
+    padding-right: 25px;
+    padding-left: 25px;
     height: 45px;
     border-radius: 20px;
-    transition: 350ms;
+    transition: 250ms;
+    align-self: center;
+    margin-top: -22px;
+    margin: 12px;
+    opacity: 0.6;
 }
 
 .redir-buttons:hover {
     cursor: pointer;
-    background: rgba(50, 50, 50, 0.6);
+    background: rgba(50, 50, 50, 0.8);
     border-radius: 22px;
-    transition: 220ms;
+    transition: 100ms;
+}
+
+#hire-button {
+    border-radius: 20px;
+    background: rgba(20, 20, 20, 0.4);
+    color: white;
+    font-family: Raleway, sans-serif;
+    border: 1px white solid;
+    font-size: 15px;
+    margin-top: 42px;
+    width: 190px;
+    height: 45px;
+}
+
+#hire-button:hover {
+    cursor: pointer;
+    background: rgba(50, 50, 50, 0.8);
+    border-radius: 22px;
+    transition: 100ms;
 }
 
 
+#hire-button > a {
+    margin-left: 9px; 
+}
 
 
     /* Intro */
 
 .intro-content {
-    padding: 12px;
+    padding: 15px;
     width: 100%;
     height: 45rem;
     display: flex;
@@ -131,7 +175,19 @@ a {
 }
 
 .introduction {
-    width: 40%;
+    width: 42.5%;
+    padding: 102px;
+}
+
+.introduction:first-child {
+    width: 42.5%;
+    border: 1px white solid;
+    border-top-right-radius: 2%;
+    border-bottom-right-radius: 2%;
+    padding: 62px;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    height: 17rem;
     text-shadow: black 2px 2px 9px;
 }
 
