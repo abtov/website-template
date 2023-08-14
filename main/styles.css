@@ -1,4 +1,146 @@
+@font-face {
+    font-family: Raleway;
+    src: url("fonts/Raleway-VariableFont_wght.ttf");
+}
+
 body {
     margin: 0%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Raleway, sans-serif;
+    overflow-x: hidden;
+    height: 120rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-hero {
+    margin: 0%;
+}
+/*
+-webkit-transform: translateZ(0);
+    transform: translateZ(0);*/
+.top-content {
+    height: 40rem;
+    width: 100%;
+    height: 45rem;
+    color: white;
+}
+
+
+.text-content {
+
+}
+
+#background {
+    width: 100%;
+    height: 45rem;
+
+    position: absolute;
+    content: url("images/webdesignphoto.jpg");
+
+    z-index: -3;
+}
+
+.background-color {
+    width: 100%;
+    height: 45rem;
+    background-color: rgba(20, 30, 50, 0.4);
+    position: absolute;
+    z-index: -2;
+}
+
+.big-circle {
+    height: 150rem;
+    width: 150rem;
+    background-color: rgba(10, 10, 10, 0.9);
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    left: -102rem;
+    top: -50rem;
+}
+
+    /* Tree */
+
+.link-tree {
+    height: 80px;
+    width: 100%;
+    padding-top: 22px;
+
+    color:black;
+    font-size: 23px;
+    background-image: linear-gradient(rgba(20, 20, 20, 0.8) 10%, rgba(20, 20, 20, 0.5), transparent 100%);
+
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-branch {
+    padding-left: 52px;
+    justify-content: start;
+    display: flex;
+}
+
+.logo {
+    width: 152px;
+    height: 100px;
+    content: url("images/Mixen-final.png");
+    padding-top: 22px;
+}
+
+.right-branch {
+    padding-right: 52px;
+    justify-content: end;
+    display: flex;
+}
+
+.redir-buttons {
+    background: rgba(20, 20, 20, 0.4);
+    border: 2px white solid;
+    color: white;
+    width: 100px;
+    height: 45px;
+    border-radius: 20px;
+    transition: 350ms;
+}
+
+.redir-buttons:hover {
+    cursor: pointer;
+    background: rgba(50, 50, 50, 0.6);
+    border-radius: 22px;
+    transition: 220ms;
+}
+
+
+
+
+    /* Intro */
+
+.intro-content {
+    padding: 12px;
+    width: 100%;
+    height: 45rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.introduction {
+    width: 40%;
+    text-shadow: black 2px 2px 9px;
+}
+
+.intro-title {
+    font-family: "Raleway", sans-serif;
+    font-weight: bolder;
+    font-size: 52px;
+}
+
+.intro-paragraph {
+    font-family: "Raleway", sans-serif
 }
