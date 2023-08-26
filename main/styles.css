@@ -102,11 +102,28 @@ a {
 }
 
 .links {
+    display: inline-block;
+    padding-bottom: 5px;
+    position: relative;
     font-weight: light;
     font-size: 18px;
     margin: 24px;
 }
 
+.links::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 1.3px;
+    background-color: white;
+    transition: width 0.20s ease-out;
+}
+
+.links:hover::before {
+    width: 100%;
+}
 
 .right-branch {
     padding-right: 52px;
@@ -132,9 +149,10 @@ a {
 
 .redir-buttons:hover {
     cursor: pointer;
-    background: rgba(50, 50, 50, 0.8);
+    background: rgba(10, 10, 10, 0.6);
     border-radius: 22px;
-    transition: 100ms;
+    opacity: 0.8;
+    transition: 120ms;
 }
 
 #hire-button {
@@ -144,7 +162,7 @@ a {
     font-family: Raleway, sans-serif;
     border: 1px white solid;
     font-size: 15px;
-    margin-top: 42px;
+    margin-top: 8px;
     width: 190px;
     height: 45px;
 }
@@ -166,9 +184,11 @@ a {
 
 .intro-content {
     padding: 15px;
-    width: 100%;
-    height: 45rem;
+    padding-top: 11rem;
+    width: 50%;
+    height: 33rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 1;
@@ -176,27 +196,183 @@ a {
 
 .introduction {
     width: 42.5%;
-    padding: 102px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
 }
 
 .introduction:first-child {
-    width: 42.5%;
+    width: 71%;
     border: 1px white solid;
-    border-top-right-radius: 2%;
-    border-bottom-right-radius: 2%;
-    padding: 62px;
-    padding-bottom: 80px;
-    padding-top: 80px;
-    height: 17rem;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 50px;
+    margin-bottom: 60px;
+
+    height: 30rem;
     text-shadow: black 2px 2px 9px;
+    justify-content: center;
+
 }
 
 .intro-title {
     font-family: "Raleway", sans-serif;
     font-weight: bolder;
+    text-shadow: 3px 3px 0px black, 4px 4px 0px gray;
     font-size: 52px;
 }
 
 .intro-paragraph {
-    font-family: "Raleway", sans-serif
+    margin-top: 18px;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 30px;
+}
+
+
+/* Additional Content */
+
+.main-content {
+    border-top: 1px white solid;
+    height: 280rem;
+    width: 100%;
+    background-color: #212121;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.buyer-ratings {
+    width: 100%;
+    height: 23rem;
+    background-color: white;
+    justify-self: end;
+}
+
+.footer-links {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-row {
+    height: 28rem;
+    width: 100%;
+    padding: 50px;
+    padding-left: 125px;
+    padding-right: 125px;
+
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-logo {
+    height: 140px;
+    width: 205px;
+}
+
+.footer-ss-link {
+    height: 15rem;
+    width: 20rem;
+}
+
+.social-media-footer {
+
+}
+
+.social-media-footer > a {
+    padding: 5px;
+}
+
+.social-icon > svg {
+    margin: 6px;
+}
+
+.text-content-footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: fit-content;
+    height: 19rem;
+    margin-top: 25px;
+    padding-left: 95px;
+}
+
+.footer-section {
+    width: 320px;
+    height: 192px;
+    padding-top: 2px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.section-title-footer {
+    font-size: 44px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    height: 70px;
+    width: 100%;
+}
+
+.section-links-footer {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.linker-footer {
+    font-weight: light;
+    display: flex;
+    align-items: center;
+    height: 42px;
+    width: 60%;
+
+    margin-top: 6px;
+    padding-left: 7px;
+    margin-left: 2px;
+
+    /*border-bottom: 1px rgba(255, 255, 255, 0.2) solid;*/
+    border-radius: 5px;
+    font-size: 15px;
+    transition: 20ms;
+}
+
+.linker-footer:hover {
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    transition: 40ms;
+}
+
+.footer-credit {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    font-size: 14px;
+    
+    background-color: white;
+    color: black;
+}
+
+.credit-left {
+    height: 100%;
+    margin-right: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.credit-right {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
